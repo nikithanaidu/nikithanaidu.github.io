@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-COMMERCE WEBSITE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+  <div class="containter">
+  <div class="navbar">
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#section1">Products</a></li>
+          <li><a href="#section2">Contact</a></li>
+          <li><a href="#section2">About Us</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Account</button>
+              <div class="dropdown-content">
+                <a href="#">Log in</a>
+                <a href="#">Register</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <img src="D:\WT bootcamp(udemy)\Mama\add-to-cart.png" height="30px" width="30px">
+      <img src="D:\WT bootcamp(udemy)\Mama\menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <center>
+        <h1>Give your choice a new go!<br>More fresher <br></h1>
+        <p>
+          Reliable nuts with creamy doses of memories of village essence
+          </p>
+        <a href="" class="btn">Explore Now &#8594</a>
+        </center>
+      </div>
+      <div class="col-2">
+        <img src="D:\WT bootcamp(udemy)\Mama\mama1.jpg">
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!--features products--->
+  <section id="section1">
+  <div class="categories">
+    <div class="small-container">
+      <h2 class="title">Products</h2>
+    <div class="row">
+      <div class="col-3">
+        <img src="D:\WT bootcamp(udemy)\Mama\mama2.jpg">
+        <h4>Pista</h4>
+        <p>
+          Min Order 1/2 kg, Rs 700 per kg
+          </p>
+      </div>
+      <div class="col-3">
+        <img src="D:\WT bootcamp(udemy)\Mama\mama3.jpg">
+        <h4>Cashew</h4>
+        <p>
+          Min Order 1kg, Rs 700 Per kg
+          </p>
+      </div>
+      <div class="col-3">
+        <img src="D:\WT bootcamp(udemy)\Mama\mama4.jpg">
+        <h4>Walnuts</h4>
+        <p>
+          Min order 250 gm, Rs 300 per 250 gm
+          </p>
+      </div>
+      <div class="col-3">
+        <img src="D:\WT bootcamp(udemy)\Mama\mama5.jpg">
+        <h4>Anjeer</h4>
+        <p>
+          Min order 250 gms, Rs 250 per 250 gm
+          </p>
+      </div>
+      <div class="col-3">
+        <img src="D:\WT bootcamp(udemy)\Mama\mama6.jpg">
+        <h4>Almonds</h4>
+        <p>
+          Min Order 1/2 kg, Rs 700 per kg
+          </p>
+      </div
+    </div>
+  </div>
+</div>
+</section>
+<!----js for toggle menu-->
+
+  <script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight=="0px")
+      {
+        MenuItems.style.maxHeight="200px";
+      }
+      else
+      {
+        MenuItems.style.maxHeight="0px";
+      }
+    }
+  </script>
+
+  <!---footer---->
+  <section id="section2">
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Contact us:</h3>
+          <p>
+            Murali: 7660879766
+            </p>
+        </div>
+        <div class="footer-col-2">
+          <h3>About Us</h3>
+          <p>
+            One of my known Person is selling high quality Dry fruits at affordable prices He gets Cashews from Kakinada directly from Farms(Andhra) and other dry fruits from local wholesale vendors. He will deliver Dry fruits at your Apartment complex door. For people who are interested , Either can join the group or place your orders directly. Payment can be done after delivery ONLY via googlePay/Phone pay/Cash directly to Murali +917660879766.Once orders are Placed, Murali will deliver to Apartments.
+            </p>
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
